@@ -1,10 +1,10 @@
-package dev.duels;
+package dev.classes;
 
 
-import dev.duels.display.Display;
-import dev.duels.gfx.Assets;
-import dev.duels.input.MouseManager;
-import dev.duels.states.*;
+import dev.classes.display.Display;
+import dev.classes.gfx.Assets;
+import dev.classes.input.MouseManager;
+import dev.classes.states.*;
 
 import java.awt.*;
 import java.awt.event.WindowEvent;

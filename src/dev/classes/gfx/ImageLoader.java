@@ -1,4 +1,4 @@
-package dev.duels.gfx;
+package dev.classes.gfx;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;

@@ -1,6 +1,6 @@
-package dev.duels.UI;
+package dev.classes.UI;
 
-import dev.duels.Handler;
+import dev.classes.Handler;
 
 import java.awt.*;
 import java.awt.event.MouseEvent;

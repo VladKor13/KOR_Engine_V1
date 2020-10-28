@@ -1,10 +1,9 @@
-package dev.duels.display;
+package dev.classes.display;
 
-import dev.duels.gfx.ImageLoader;
+import dev.classes.gfx.ImageLoader;
 
 import javax.swing.*;
 import java.awt.*;
-import java.io.FileNotFoundException;
 import java.net.URL;
 
 public class Display {

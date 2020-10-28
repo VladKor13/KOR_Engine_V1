@@ -1,6 +1,6 @@
-package dev.duels.input;
+package dev.classes.input;
 
-import dev.duels.UI.UIManager;
+import dev.classes.UI.UIManager;
 
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;

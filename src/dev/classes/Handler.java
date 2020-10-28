@@ -1,6 +1,6 @@
-package dev.duels;
+package dev.classes;
 
-import dev.duels.input.MouseManager;
+import dev.classes.input.MouseManager;
 
 public class Handler {
 

@@ -1,4 +1,4 @@
-package dev.duels.UI;
+package dev.classes.UI;
 
 public interface ClickListener {
 

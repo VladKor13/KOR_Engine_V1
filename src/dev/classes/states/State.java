@@ -1,7 +1,6 @@
-package dev.duels.states;
+package dev.classes.states;
 
-import dev.duels.Game;
-import dev.duels.Handler;
+import dev.classes.Handler;
 
 import java.awt.*;
 

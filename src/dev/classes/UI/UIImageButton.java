@@ -1,6 +1,6 @@
-package dev.duels.UI;
+package dev.classes.UI;
 
-import dev.duels.gfx.ObjectMotionAnimation;
+import dev.classes.gfx.ObjectMotionAnimation;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;

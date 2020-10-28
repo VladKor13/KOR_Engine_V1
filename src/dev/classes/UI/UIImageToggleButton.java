@@ -1,10 +1,7 @@
-package dev.duels.UI;
+package dev.classes.UI;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 public class UIImageToggleButton extends UIObject {
 

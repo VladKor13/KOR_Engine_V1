@@ -1,4 +1,4 @@
-package dev.duels.states;
+package dev.classes.states;
 
 public class RoundMenuState {
 }

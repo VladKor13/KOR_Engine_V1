@@ -1,6 +1,6 @@
-package dev.duels.UI;
+package dev.classes.UI;
 
-import dev.duels.gfx.ImageLoader;
+import dev.classes.gfx.ImageLoader;
 
 import javax.imageio.ImageIO;
 import java.awt.*;

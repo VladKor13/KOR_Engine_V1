@@ -1,12 +1,11 @@
-package dev.duels.states;
+package dev.classes.states;
 
-import dev.duels.Handler;
+import dev.classes.Handler;
 
-import dev.duels.UI.ClickListener;
-import dev.duels.gfx.Assets;
-import dev.duels.UI.UIImageButton;
-import dev.duels.UI.UIManager;
-import dev.duels.gfx.ObjectMotionAnimation;
+import dev.classes.gfx.Assets;
+import dev.classes.UI.UIImageButton;
+import dev.classes.UI.UIManager;
+import dev.classes.gfx.ObjectMotionAnimation;
 
 import java.awt.*;
 
