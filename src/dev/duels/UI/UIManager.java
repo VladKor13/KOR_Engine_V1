@@ -9,61 +9,40 @@ import java.util.ArrayList;
 public class UIManager {
 
     private Handler handler;
-    private ArrayList<Object> objects;
+    private ArrayList<UIObject> objects;
 
     public UIManager(Handler handler){
         this.handler = handler;
-        objects = new ArrayList<Object>();
+        objects = new ArrayList<UIObject>();
     }
 
     public void tick(){
-
-        for(Object o : objects) {
-            if(o instanceof RectangleUIImageButton){
-                ((RectangleUIImageButton) o).tick();
-            }
-            if(o instanceof CustomUIImageButton){
-                ((CustomUIImageButton) o).tick();
-            }
+        for(UIObject o : objects) {
+            o.tick();
         }
     }
 
     public void render(Graphics g){
-        for(Object o : objects) {
-            if(o instanceof RectangleUIImageButton){
-                ((RectangleUIImageButton) o).render(g);
+        for(UIObject o : objects) {
+                o.render(g);
             }
-            if(o instanceof CustomUIImageButton){
-                ((CustomUIImageButton) o).render(g);
-            }
-        }
     }
 
     public void onMouseMove(MouseEvent e){
-        for(Object o : objects) {
-            if(o instanceof RectangleUIImageButton){
-                ((RectangleUIImageButton) o).onMouseMove(e);
-            }
-            if(o instanceof CustomUIImageButton){
-                ((CustomUIImageButton) o).onMouseMove(e);
-            }
+        for(UIObject o : objects) {
+                o.onMouseMove(e);
         }
 
     }
 
     public void onMouseRelease(MouseEvent e){
-        for(Object o : objects) {
-            if(o instanceof RectangleUIImageButton){
-                ((RectangleUIImageButton) o).onMouseRelease(e);
-            }
-            if(o instanceof CustomUIImageButton){
-                ((CustomUIImageButton) o).onMouseMove(e);
-            }
+        for(UIObject o : objects) {
+                o.onMouseRelease(e);
         }
 
     }
 
-    public void addObject(Object o){
+    public void addObject(UIObject o){
         objects.add(o);
     }
 
@@ -79,11 +58,11 @@ public class UIManager {
         this.handler = handler;
     }
 
-    public ArrayList<Object> getObjects() {
+    public ArrayList<UIObject> getObjects() {
         return objects;
     }
 
-    public void setObjects(ArrayList<Object> objects) {
+    public void setObjects(ArrayList<UIObject> objects) {
         this.objects = objects;
     }
 

@@ -1,16 +1,12 @@
 package dev.duels.states;
 
-import dev.duels.Game;
 import dev.duels.Handler;
 
 import dev.duels.UI.ClickListener;
-import dev.duels.UI.CustomUIImageButton;
-import dev.duels.UI.RectangleUIImageButton;
+import dev.duels.gfx.Assets;
+import dev.duels.UI.UIImageButton;
 import dev.duels.UI.UIManager;
 import dev.duels.display.Display;
-import dev.duels.gfx.Assets;
-import dev.duels.gfx.ImageLoader;
-import dev.duels.input.MouseManager;
 
 import java.awt.*;
 
@@ -26,9 +22,10 @@ public class ImgCheckState extends State {
         handler.getMouseManager().setUiManager(uiManager);
 
         //TEST CUSTOM BUTTON
-        uiManager.addObject(new CustomUIImageButton(30, 30, () -> {
+        uiManager.addObject(new UIImageButton(30, 30, "/textures/elementExplosive034.png",
+                Assets.custom_btn, () -> {
 
-        }, "/textures/elementExplosive034.png"));
+                }));
 
     }
 

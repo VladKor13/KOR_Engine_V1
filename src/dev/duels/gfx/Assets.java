@@ -7,7 +7,7 @@ public class Assets {
     public static BufferedImage[] start_button, continue_button, options_button, exit_button,
             plus_button, minus_button, done_button, back_button,
             lightAttack_button, hardAttach_button, block_button, evade_button,
-            cross_button, fight_button;
+            cross_button, fight_button, custom_btn;
     public static BufferedImage MenuBackGround, RedNightBackGround, HeroCreationBackGround, YouDiedBackGround,
         RainBackGround, RockBackGround, RedBackground;
 
@@ -91,6 +91,11 @@ public class Assets {
         fight_button[0] = ImageLoader.loadImage("/textures/FightButton.png");
         fight_button[1] = ImageLoader.loadImage("/textures/FightButtonHovering.png");
         fight_button[2] = ImageLoader.loadImage("/textures/FightButtonPressed.png");
+
+        custom_btn = new BufferedImage[3];
+        custom_btn[0] = ImageLoader.loadImage("/textures/elementExplosive034.png");
+        custom_btn[1] = ImageLoader.loadImage("/textures/elementExplosive034.png");
+        custom_btn[2] = ImageLoader.loadImage("/textures/elementExplosive034.png");
 
         NumPanel = new BufferedImage[11];
         NumPanel[0] = ImageLoader.loadImage("/textures/Num0Panel.png");
