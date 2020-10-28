@@ -1,5 +1,7 @@
 package dev.duels.UI;
 
+import dev.duels.gfx.ObjectMotionAnimation;
+
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
@@ -8,6 +10,7 @@ public class UIImageButton extends UIObject {
     private BufferedImage[] images;
     private ClickListener clicker;
     private boolean IsEnable = true;
+    private ObjectMotionAnimation objectMotionAnimation;
 
 
     public UIImageButton(int x, int y, int width, int height, BufferedImage[] images, ClickListener clicker) {
@@ -24,11 +27,22 @@ public class UIImageButton extends UIObject {
 
     @Override
     public void tick() {
-
+        if(objectMotionAnimation != null){
+            if(objectMotionAnimation.ANIM_STOP){
+                objectMotionAnimation = null;
+            } else {
+                objectMotionAnimation.tick();
+            }
+        }
     }
 
     @Override
     public void render(Graphics g) {
+        if(objectMotionAnimation != null){
+            this.setX(objectMotionAnimation.getCur_x());
+            this.setY(objectMotionAnimation.getCur_y());
+        }
+
         if(IsEnable) {
             if (hovering) {
                 //HOVERING == TRUE
@@ -44,11 +58,11 @@ public class UIImageButton extends UIObject {
             //HOVERING == FALSE
             g.drawImage(images[0], x, y, width, height, null);
         }
+
     }
 
     @Override
     public void onClick() {
-
         if(IsEnable) {
             clicker.onClick();
         }
@@ -61,5 +75,9 @@ public class UIImageButton extends UIObject {
 
     public boolean getEnable(){
         return IsEnable;
+    }
+
+    public void setObjectMotionAnimation(ObjectMotionAnimation objectMotionAnimation){
+        this.objectMotionAnimation = objectMotionAnimation;
     }
 }

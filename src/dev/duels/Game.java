@@ -15,6 +15,8 @@ import java.awt.image.BufferStrategy;
 //MAIN CLASS OF OUR GAME
 public class Game  implements Runnable{
 
+    public static int fps = 60;
+
     private Display display;
     private int width, height;
     private String title;
@@ -95,7 +97,6 @@ public class Game  implements Runnable{
     public void run(){
         init();
 
-        int fps = 60;
         double timePerTick = 1000000000 / fps;
         double delta = 0;
         long now;

@@ -4,8 +4,6 @@ import dev.duels.input.MouseManager;
 
 public class Handler {
 
-
-
     private Game game;
 
     public Handler(Game game) {

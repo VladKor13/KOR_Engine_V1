@@ -129,7 +129,7 @@ public abstract class UIObject {
 
 
 //    GETTERS AND SETTERS
-    public float getX() {
+    public int getX() {
         return x;
     }
 
@@ -137,7 +137,7 @@ public abstract class UIObject {
         this.x = x;
     }
 
-    public float getY() {
+    public int getY() {
         return y;
     }
 
